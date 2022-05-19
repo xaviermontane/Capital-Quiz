@@ -1,0 +1,27 @@
+"""
+-------------------------------------------------------------------------------
+Name:		main.py
+Purpose:	A quiz on the user’s knowledge of the capital city for each of Canada’s provinces and territories. 
+
+Author:		Montane.X
+
+Created:	05/19/2022
+------------------------------------------------------------------------------
+"""
+
+print("Canadian Capital City Quiz\n")
+
+province = ["Alberta","British Columbia","Manitoba","New Brunswick","Newfoundland and Labrador","Northwest Territories","Nova Scotia","Nunavut","Ontario","Prince Edward Island","Quebec","Saskatchewan","Yukon"]
+
+capital = ["Edmonton","Victoria","Winnipeg","Fredericton","St. John's","Yellowknife","Halifax","Iqaluit","Toronto","Charlottetown","Quebec City","Regina","Whitehorse"]
+
+
+def quiz():
+  print("What is the capital city of", province[0], "?")
+  var = input("")
+  if var == capital[0]:
+    print("\nCorrect.", capital[0], "is the capital city.")
+  else:
+    print("\nIncorrect.", "The capital city is", capital[0])
+
+quiz()
